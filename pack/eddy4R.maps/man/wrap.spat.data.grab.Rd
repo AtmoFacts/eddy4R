@@ -5,10 +5,10 @@
 \title{wrapper function to generate spatial targets}
 \usage{
 wrap.spat.data.grab(
-  dir = "targets",
+  dir = tempdir(),
   dateBgn = "2019-05-01",
   dateEnd = "2019-11-30",
-  site = c("cheesehead")[1],
+  site = c("CPER", "CHEESEHEAD")[2],
   dt = "P1M",
   dx = 0.1,
   dy = 0.1

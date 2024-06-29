@@ -5,7 +5,7 @@
 \title{definition function to create bounding box}
 \usage{
 def.bbox(
-  DirInp = NULL,
+  site = c("CPER", "CHEESEHEAD")[2],
   crs = "EPSG:4326",
   pad_box = FALSE,
   pad_degree = 0.5,
@@ -14,13 +14,13 @@ def.bbox(
 )
 }
 \arguments{
+\item{site}{the site to use to grab the bounding box}
+
 \item{crs}{coordinate reference system (Defaults to "EPSG:4326")}
 
 \item{pad_box}{logical to determine if padding should be applied to bounding box (defaults to FALSE)}
 
 \item{pad_degree}{decimal degree of latitude and longitude to pad the bounding box (defaults to 0.1)}
-
-\item{dir}{directory where shapefiles are located}
 }
 \value{
 list containing shapefile data and bbox

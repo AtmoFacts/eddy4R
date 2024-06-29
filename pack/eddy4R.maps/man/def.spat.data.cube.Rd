@@ -8,12 +8,12 @@ def.spat.data.cube(
   start_date,
   end_date,
   box,
-  collection = "modis-15A2H-061",
-  asset_name = "Lai_500m",
+  collection = c("modis-15A2H-061", "sentinel-3-slstr-lst-l2-netcdf")[2],
+  asset_name = c("Lai_500m", "lst-in")[2],
   srs = "EPSG:4326",
   dx = 0.1,
   dy = 0.1,
-  dt = "P30D",
+  dt = "P1M",
   aggregation = "mean",
   resampling = "near"
 )
